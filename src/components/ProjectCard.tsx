@@ -16,6 +16,12 @@ export default function ProjectCard({
     locale === "zh" ? project.period.replace("Present", "至今") : project.period;
   return (
     <article className="card">
+      {project.gif && (
+        <div className="card-media">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={project.gif} alt={`${project.title} — animated overview`} loading="lazy" />
+        </div>
+      )}
       <div className="card-period">
         {period} · {project.affiliation[locale]}
       </div>

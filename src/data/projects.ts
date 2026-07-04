@@ -16,11 +16,14 @@ export interface Project {
   paper?: string;
   award?: string;
   featured?: boolean;
+  /** Sketch-style input→model→output loop, in public/research/. */
+  gif?: string;
 }
 
 export const projects: Project[] = [
   {
     id: "merit-cv",
+    gif: "/research/merit-cv.gif",
     title: "MERIT-CV: Multimodal MACE Prediction from Opportunistic CT + Clinical Text",
     period: "2025 – Present",
     affiliation: { en: "Mayo Clinic Arizona", zh: "梅奥诊所（亚利桑那）" },
@@ -43,6 +46,7 @@ export const projects: Project[] = [
   },
   {
     id: "saswise-ue",
+    gif: "/research/saswise-ue.gif",
     title: "SASWISE-UE: Scalable Uncertainty Estimation for Segmentation & Synthesis",
     period: "2023 – 2025",
     affiliation: { en: "UW–Madison", zh: "威斯康星大学麦迪逊分校" },
@@ -67,6 +71,7 @@ export const projects: Project[] = [
   },
   {
     id: "hnts-mrg",
+    gif: "/research/hnts-mrg.gif",
     title: "Spatial–Temporal Attention for Longitudinal 3D Tumor Segmentation",
     period: "2024",
     affiliation: { en: "UW–Madison", zh: "威斯康星大学麦迪逊分校" },
@@ -91,6 +96,7 @@ export const projects: Project[] = [
   },
   {
     id: "federated",
+    gif: "/research/federated.gif",
     title: "Federated Learning Framework with Modular Block Design",
     period: "2023 – 2025",
     affiliation: { en: "UW–Madison", zh: "威斯康星大学麦迪逊分校" },
@@ -109,6 +115,7 @@ export const projects: Project[] = [
   },
   {
     id: "bae-vit",
+    gif: "/research/bae-vit.gif",
     title: "BAE-ViT: Multimodal Vision Transformer for Bone Age Estimation",
     period: "2024",
     affiliation: { en: "UW–Madison", zh: "威斯康星大学麦迪逊分校" },
@@ -130,6 +137,7 @@ export const projects: Project[] = [
   },
   {
     id: "nascent",
+    gif: "/research/nascent.gif",
     title: "Synthetic CT from Non-Attenuation-Corrected PET",
     period: "2024 – 2025",
     affiliation: { en: "UW–Madison", zh: "威斯康星大学麦迪逊分校" },
